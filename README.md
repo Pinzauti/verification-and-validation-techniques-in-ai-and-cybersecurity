@@ -1,2 +1,1 @@
-# LaTeX report template
-LaTeX template for reports.
+# Exercises for the course Verification and Validation Techniques in AI and Cybersecurity
