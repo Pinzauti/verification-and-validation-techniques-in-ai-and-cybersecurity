@@ -1,4 +1,4 @@
-\PassOptionsToPackage{nochapters, eulermath}{classicthesis}
+\PassOptionsToPackage{nochapters, eulermath, style=arsclassica}{classicthesis}
 
 \PassOptionsToPackage{backend=biber, style=alphabetic}{biblatex}
 \usepackage{biblatex}
@@ -6,16 +6,17 @@
 
 \usepackage{graphicx} 
     \graphicspath{{Images/}}
-\usepackage{braket, amsmath, amssymb, amsthm, mathtools}
+\usepackage{amssymb, amsthm, mathtools}
 
 \DeclarePairedDelimiter{\abs}{\lvert}{\rvert}
 
-\theoremstyle{definition}
-\newtheorem{postulate}{Postulate}
-\newtheorem{defn}{Definition}
-
 \theoremstyle{plain}
-\newtheorem{theorem}{Theorem}
+\newtheorem{exercises}{Exercises}[section]
+
+\newenvironment{solution}
+  {\renewcommand\qedsymbol{$\blacksquare$}\begin{proof}[Solution]}
+  {\end{proof}}
+
 
 \usepackage{classicthesis}
 
